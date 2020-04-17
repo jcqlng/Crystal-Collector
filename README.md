@@ -27,4 +27,6 @@ In this assignment I have created a game called "crystal collector". In the game
    * The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
 ** THESE INSTRUCTIONS ARE QUOTED FROM THE HOMEWORK ASSIGNMENT
 
+# Authors & Acknowledgement
+Jackie Geiger - Myself for putting this together through the research of Google, javascript, W3 schools online, stack overflow, assignment instructions, and videos from class.
 
