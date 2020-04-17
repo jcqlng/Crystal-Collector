@@ -30,3 +30,4 @@ In this assignment I have created a game called "crystal collector". In the game
 # Authors & Acknowledgement
 Jackie Geiger - Myself for putting this together through the research of Google, javascript, W3 schools online, stack overflow, assignment instructions, and videos from class.
 
+Markus Geiger - Honestly my husband / tutor who is currently a senior solutions architect and helps me understand why my code didn't work at times. 
