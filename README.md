@@ -28,6 +28,16 @@ In this assignment I have created a game called "crystal collector". In the game
 ** THESE INSTRUCTIONS ARE QUOTED FROM THE HOMEWORK ASSIGNMENT
 
 # Authors & Acknowledgement
-Jackie Geiger - Myself for putting this together through the research of Google, javascript, W3 schools online, stack overflow, assignment instructions, and videos from class.
+* Jackie Geiger - Myself for putting this together through the research of Google, javascript, W3 schools online, stack overflow, assignment instructions, and videos from class.
 
-Markus Geiger - Honestly my husband / tutor who is currently a senior solutions architect and helps me understand why my code didn't work at times. 
+* Markus Geiger - Honestly my husband / tutor who is currently a senior solutions architect and helps me understand why my code didn't work at times.
+
+* Crystals - 
+  * Red crystal: https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.crystalcompany.com%2Fdiamond-red.html&psig=AOvVaw3NoQ4SHSZOQ7pXizcTG7gC&ust=1587939527084000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKCnre3NhOkCFQAAAAAdAAAAABAE
+
+  * Blue crystal: https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.thejewelleryeditor.com%2Fwhats-on%2Fauctions%2Fflawless-vivid-blue-diamond-renamed-the-winston-blue-and-sets-new-world-record%2F&psig=AOvVaw3PCMIFg88jZLzezRdLkmho&ust=1587939768115000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLj746_PhOkCFQAAAAAdAAAAABAc
+
+  * Yellow Crystal: https://www.google.com/url?sa=i&url=https%3A%2F%2Fgeology.com%2Fdiamond%2Fyellow-diamonds%2F&psig=AOvVaw1wqBnqP7IDdtE7mVnM1cQy&ust=1587941228626000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjhwJjUhOkCFQAAAAAdAAAAABAH
+
+  * Background Image: https://www.freepik.com/free-vector/abstract-futuristic-background_6436942.htm#query=blue-abstract-background&position=28
+  
