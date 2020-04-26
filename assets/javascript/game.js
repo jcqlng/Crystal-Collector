@@ -60,3 +60,7 @@ $(".gem-buttons").on("click", function () {
         playGame();
     }
 }
+
+gemValues();
+playGame();
+
