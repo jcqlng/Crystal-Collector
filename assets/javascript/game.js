@@ -1,66 +1,47 @@
 // Variables 
-$(document).ready(function(){
-    var wins = 0;
-    var losses = 0;
-    $(".wins-text").text("Wins:  " + wins);
-    $(".losses-text").text("Losses: " + losses);
+var yourScore = document.getElementById('yourScore');
 
-// Array of Images
-var gemImages = ["assets/images/red-crystal.jpeg","assets/images/blue-crystal.jpeg", "assets/images/yellow-crystal.jpeg","assets/images/green-crystal.jpeg"];
+// Displays the current score
+yourScore.innerHTML = 0; 
+var targetScore = document.getElementById('targetScore');
+targetScore.innerHTML = getRandomValue(10, 4);
 
-// Assignment of random number to each gem 
-function gemValues() {
-    for (var i=0; i < gemImages.length; i++) {
-        var image = $("<img>");
-        image.addClass("gem-buttons gem gem-image");
-        image.attr("src", gemImages[i]);
-        image.attr("data-letter", Math.floor(Math.random() *12) +1);
-        $("#gems").append(image);
-    }
-}
+function addToScore(val) {
+  var numberToAdd = parseInt(val);
+  var currentScore = parseInt(yourScore.innerHTML);
+  yourScore.innerHTML = numberToAdd + currentScore;
+} 
 
-// When the gem is clicked
-$(".gem-buttons").on("click", function () {
-    // Assigns random number to clicks
-    gemIsClicked = true;
-    var gemValue = ($(this).attr ("data-letter"));
-    gemValue = parseInt(gemValue);
-    // Adds global variables to click 
+// the values of each gem and the console log -- retrieved by website in readme
+var red = document.getElementById("red");
+//red.setAttribute("value", "5");
+console.log(red.value);
+
+var blue = document.getElementById("blue");
+//console.log(blue.value);
+
+var yellow = document.getElementById("yellow");
+//console.log(yellow.value);
+
+var green = document.getElementById("green");
+//console.log(green.value);
+
+// add an event listener to elements
+red.addEventListener('click', function() {
+  //this refers to red
+  addToScore(this.value);
+  checkPlayerScore();
+});
     counter += gemValue;
 
     console.log(gemValue);
     console.log(counter);
+    var playerInt = parseInt(yourScore.innerHTML);
+    var targetInt = parseInt(targetScore.innerHTML);
+    if (playerInt === targetInt) {
+        alert('You win!');
+    } else if (playerInt > targetInt) {
+        alert('You lose!');
+  } 
 
-    $(".your-guess").text("Your points: " + counter);
-
-    if (counter === targetNumber) {
-        alert("You win!");
-        wins++;
-        $(".wins-text").text("Wins: " + wins);
-        $("#gems").empty();
-        gemValues();
-        playGame();
-    }
-
-    else if (counter >= targetNumber) {
-        alert("You lose!");
-        losses++;
-        $(".losses-text").text("Losses: "+ losses);
-        $("#gems").empty();
-        gemValues();
-        playGame();
-    }
-
-    else if(counter >= targetNumber) {
-        alert("You lose!");
-        losses++;
-        $(".losses-text").text("Losses: " + losses);
-        $("#gems").empty();
-        gemValues();
-        playGame();
-    }
-}
-
-gemValues();
-playGame();
-
+console.log(getRandomValue(10, 4));
