@@ -29,7 +29,7 @@ The player will have to guess the answer, just like in Word Guess. This time, th
 # Authors & Acknowledgement
 * Jackie Geiger - Myself for putting this together through the research of Google, javascript, W3 schools online, stack overflow, assignment instructions, and videos from class.
 
-* Markus Geiger - Honestly my husband / tutor who is currently a senior solutions architect and helps me understand why my code didn't work at times.
+* Javascript: https://codepen.io/karadi/pen/dvoPaP
 
 * For the reset css sheet : https://meyerweb.com/eric/tools/css/reset/ 
 
@@ -42,4 +42,5 @@ The player will have to guess the answer, just like in Word Guess. This time, th
   * Yellow Crystal: https://www.google.com/url?sa=i&url=https%3A%2F%2Fgeology.com%2Fdiamond%2Fyellow-diamonds%2F&psig=AOvVaw1wqBnqP7IDdtE7mVnM1cQy&ust=1587941228626000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjhwJjUhOkCFQAAAAAdAAAAABAH
 
   * Background Image: https://pixabay.com/illustrations/quatrefoil-pattern-teal-green-898081/
+
 
