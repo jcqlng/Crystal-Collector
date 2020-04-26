@@ -34,3 +34,60 @@ function Reset () {
     crystal3 = parseInt(Math.floor(Math.random() *12) +1);
     crystal4 = parseInt(Math.floor(Math.random() *12) +1);
 }
+
+// Click functions per stone
+$("#crystal1").on("click", function(){
+    score = score + crystal1;
+    $("#score").html(score);
+    console.log("score1" + score);
+    if (score == computerGuess) {
+        checkIfWon();
+    }else if (score > computerGuess){
+        checkIfWon();
+    }
+});
+
+$("#crystal2").on("click", function(){
+    score = score + crystal2;
+    $("#score").html(score);
+    console.log("score2" + score);
+    if (score == computerGuess) {
+        checkIfWon();
+    }else if (score > computerGuess){
+        checkIfWon();
+    }
+});
+
+$("#crystal3").on("click", function(){
+    score = score + crystal3;
+    $("#score").html(score);
+    console.log("score3" + score);
+    if (score == computerGuess) {
+        checkIfWon();
+    }else if (score > computerGuess){
+        checkIfWon();
+    }
+});
+
+$("#crystal4").on("click", function(){
+    score = score + crystal4;
+    $("#score").html(score);
+    console.log("score4" + score);
+    if (score == computerGuess) {
+        checkIfWon();
+    }else if (score > computerGuess){
+        checkIfWon();
+    }
+});
+
+// Win and losses functions
+function checkIfWon() {
+    if(score == computerGuess){
+        wins++;
+        console.log(wins);
+        
+    }
+}
+
+
+
