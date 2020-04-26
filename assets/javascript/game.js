@@ -19,95 +19,44 @@ function gemValues() {
     }
 }
 
-// variable/ math to do a random number generator
-    var computerGuess = parseInt(Math.floor(Math.random() * 120) + 19);
-    $("#randomNumber").html(computerGuess);
+// When the gem is clicked
+$(".gem-buttons").on("click", function () {
+    // Assigns random number to clicks
+    gemIsClicked = true;
+    var gemValue = ($(this).attr ("data-letter"));
+    gemValue = parseInt(gemValue);
+    // Adds global variables to click 
+    counter += gemValue;
 
-// variables for the stones
-   var crystal1 = parseInt(Math.floor(Math.random() * 12) + 1);
-   var crystal2 = parseInt(Math.floor(Math.random() * 12) + 1);
-   var crystal3 = parseInt(Math.floor(Math.random() * 12) + 1);
-   var crystal4 = parseInt(Math.floor(Math.random() * 12) + 1);
-   
-// Console log testing the random numbers
-    console.log("computerGuess" + computerGuess);
-    console.log("crystal-1" + crystal1);
-    console.log("crystal-2" + crystal2);
-    console.log("crystal-3" + crystal3);
-    console.log("crystal-4" + crystal4);
-})
+    console.log(gemValue);
+    console.log(counter);
 
-// Reset function 
-function Reset () {
-    score = 0;
-    $("#score").html(score);
-    computerGuess = parseInt(Math.floor(Math.random() * 120) + 19);
-    $("#randomNumber").html(computerGuess);
+    $(".your-guess").text("Your points: " + counter);
 
-    crystal1 = parseInt(Math.floor(Math.random() *12) +1);
-    crystal2 = parseInt(Math.floor(Math.random() *12) +1);
-    crystal3 = parseInt(Math.floor(Math.random() *12) +1);
-    crystal4 = parseInt(Math.floor(Math.random() *12) +1);
-}
-
-// Click functions per stone
-$("#crystal1").on("click", function(){
-    score = score + crystal1;
-    $("#score").html(score);
-    console.log("score1" + score);
-    if (score == computerGuess) {
-        checkIfWon();
-    }else if (score > computerGuess){
-        checkIfWon();
+    if (counter === targetNumber) {
+        alert("You win!");
+        wins++;
+        $(".wins-text").text("Wins: " + wins);
+        $("#gems").empty();
+        gemValues();
+        playGame();
     }
-});
 
-$("#crystal2").on("click", function(){
-    score = score + crystal2;
-    $("#score").html(score);
-    console.log("score2" + score);
-    if (score == computerGuess) {
-        checkIfWon();
-    }else if (score > computerGuess){
-        checkIfWon();
+    else if (counter >= targetNumber) {
+        alert("You lose!");
+        losses++;
+        $(".losses-text").text("Losses: "+ losses);
+        $("#gems").empty();
+        gemValues();
+        playGame();
     }
-});
 
-$("#crystal3").on("click", function(){
-    score = score + crystal3;
-    $("#score").html(score);
-    console.log("score3" + score);
-    if (score == computerGuess) {
-        checkIfWon();
-    }else if (score > computerGuess){
-        checkIfWon();
-    }
-});
-
-$("#crystal4").on("click", function(){
-    score = score + crystal4;
-    $("#score").html(score);
-    console.log("score4" + score);
-    if (score == computerGuess) {
-        checkIfWon();
-    } else if (score > computerGuess){
-        checkIfWon();
-    }
-});
-
-// Win and losses functions
-function checkIfWon() {
-    if(score == computerGuess){
-        winns++;
-        console.log(wins);
-        $("#winn").html("You win!");
-        $("win").html("win:  " +wins);
-        Reset();
-
-    } else if (score > computerGuess){
-        lost++;
-        console.log(lost);
-        $("#lost").html("Lost:  " + lost);
-        Reset();
+    else if(counter >= targetNumber) {
+        alert("You lose!");
+        losses++;
+        $(".losses-text").text("Losses: " + losses);
+        $("#gems").empty();
+        gemValues();
+        playGame();
     }
 }
