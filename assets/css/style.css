@@ -4,5 +4,5 @@ img {
   }
 
   body {
-      background-color: pink;
+      background-image: url('../images/background.jpg');
   }
