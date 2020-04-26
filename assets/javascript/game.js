@@ -26,4 +26,11 @@ $(document).ready(function(){
 function Reset () {
     score = 0;
     $("#score").html(score);
+    computerGuess = parseInt(Math.floor(Math.random() * 120) + 19);
+    $("#randomNumber").html(computerGuess);
+
+    crystal1 = parseInt(Math.floor(Math.random() *12) +1);
+    crystal2 = parseInt(Math.floor(Math.random() *12) +1);
+    crystal3 = parseInt(Math.floor(Math.random() *12) +1);
+    crystal4 = parseInt(Math.floor(Math.random() *12) +1);
 }
