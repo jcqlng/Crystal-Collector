@@ -13,17 +13,17 @@ function addToScore(val) {
 } 
 
 // the values of each gem and the console log -- retrieved by website in readme
-var red = document.getElementById("red");
+var red = document.getElementById("crystal-1");
 //red.setAttribute("value", "5");
 console.log(red.value);
 
-var blue = document.getElementById("blue");
+var blue = document.getElementById("crystal-2");
 //console.log(blue.value);
 
-var yellow = document.getElementById("yellow");
+var yellow = document.getElementById("crystal-3");
 //console.log(yellow.value);
 
-var green = document.getElementById("green");
+var green = document.getElementById("crystal-4");
 //console.log(green.value);
 
 // add an event listener to elements
