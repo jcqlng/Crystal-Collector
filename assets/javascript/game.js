@@ -1,8 +1,12 @@
 // Variables 
 $(document).ready(function(){
     var wins = 0;
-    var lost = 0;
-    var score = 0;
+    var losses = 0;
+    $(".wins-text").text("Wins:  " + wins);
+    $(".losses-text").text("Losses: " + losses);
+
+// Array of Images
+
 
 // variable/ math to do a random number generator
     var computerGuess = parseInt(Math.floor(Math.random() * 120) + 19);
@@ -16,10 +20,10 @@ $(document).ready(function(){
    
 // Console log testing the random numbers
     console.log("computerGuess" + computerGuess);
-    console.log("crystal1" + crystal1);
-    console.log("crystal2" + crystal2);
-    console.log("crystal3" + crystal3);
-    console.log("crystal4" + crystal4);
+    console.log("crystal-1" + crystal1);
+    console.log("crystal-2" + crystal2);
+    console.log("crystal-3" + crystal3);
+    console.log("crystal-4" + crystal4);
 })
 
 // Reset function 
