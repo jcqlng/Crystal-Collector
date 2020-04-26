@@ -9,24 +9,27 @@
 <link rel="stylesheet" type="reset.css" href="assets/css/reset.css">
 <link rel="stylesheet" type="style.css" href="assets/css/style.css">
 <div style="background-image: url('background.jpg');">
-
-<!--Scripts-->
-
+<!--Header -->
     </head>
     <body>
-    
-        <header class="header"><h1>Crystal Collector!</h1></header>
-        
-    <div class="instructions">
-        <h2>Instructions:</h2>
-            <p> You will be given a random number at the beginning of this game. </p>
-            <p>
-                There are four crystals below.
-                By clicking con a crystal, you will add a specific number of points 
-                to your total score.
-            </p> 
-            
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" id="yellow">
+                    <h1>Crystal Collector Game!</h1>
+                </div>
+            </div>
+            <br>
 
-        </div>
+<!--The instructions-->
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+
     </body>
+
+<!--Scripts-->
+    <script src="game.js"></script>
+
 </html>
