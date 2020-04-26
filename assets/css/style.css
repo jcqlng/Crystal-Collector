@@ -3,6 +3,10 @@ img {
     height: auto;
   }
 
-  body {
+body {
       background-image: url('../images/background.jpg');
+  }
+
+.container {
+    min-height: 56px;
   }
