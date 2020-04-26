@@ -41,5 +41,5 @@ The player will have to guess the answer, just like in Word Guess. This time, th
 
   * Yellow Crystal: https://www.google.com/url?sa=i&url=https%3A%2F%2Fgeology.com%2Fdiamond%2Fyellow-diamonds%2F&psig=AOvVaw1wqBnqP7IDdtE7mVnM1cQy&ust=1587941228626000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjhwJjUhOkCFQAAAAAdAAAAABAH
 
-  * Background Image: https://www.freepik.com/free-vector/abstract-futuristic-background_6436942.htm#query=blue-abstract-background&position=28
+  * Background Image: https://pixabay.com/illustrations/quatrefoil-pattern-teal-green-898081/
 
