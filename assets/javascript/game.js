@@ -83,9 +83,9 @@ $("#crystal4").on("click", function(){
 // Win and losses functions
 function checkIfWon() {
     if(score == computerGuess){
-        wins++;
+        winns++;
         console.log(wins);
-        $("#win").html("You win!");
+        $("#winn").html("You win!");
         $("win").html("win:  " +wins);
         Reset();
 
