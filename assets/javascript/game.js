@@ -6,7 +6,18 @@ $(document).ready(function(){
     $(".losses-text").text("Losses: " + losses);
 
 // Array of Images
+var gemImages = ["assets/images/red-crystal.jpeg","assets/images/blue-crystal.jpeg", "assets/images/yellow-crystal.jpeg","assets/images/green-crystal.jpeg"];
 
+// Assignment of random number to each gem 
+function gemValues() {
+    for (var i=0; i < gemImages.length; i++) {
+        var image = $("<img>");
+        image.addClass("gem-buttons gem gem-image");
+        image.attr("src", gemImages[i]);
+        image.attr("data-letter", Math.floor(Math.random() *12) +1);
+        $("#gems").append(image);
+    }
+}
 
 // variable/ math to do a random number generator
     var computerGuess = parseInt(Math.floor(Math.random() * 120) + 19);
