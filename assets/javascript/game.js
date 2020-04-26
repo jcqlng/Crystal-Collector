@@ -75,7 +75,7 @@ $("#crystal4").on("click", function(){
     console.log("score4" + score);
     if (score == computerGuess) {
         checkIfWon();
-    }else if (score > computerGuess){
+    } else if (score > computerGuess){
         checkIfWon();
     }
 });
@@ -85,7 +85,15 @@ function checkIfWon() {
     if(score == computerGuess){
         wins++;
         console.log(wins);
-        
+        $("#win").html("You win!");
+        $("win").html("win:  " +wins);
+        Reset();
+
+    } else if (score > computerGuess){
+        lost++;
+        console.log(lost);
+        $("#lost").html("Lost:  " + lost);
+        Reset();
     }
 }
 
