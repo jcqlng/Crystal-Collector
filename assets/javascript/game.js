@@ -28,3 +28,35 @@ var Crystal= {
 
 };
 
+// Scores
+var currentScore = 0;
+var targetScore = 0; 
+
+// Tabs
+var winCount =0;
+var lossCount = 0;
+
+var startGame= function() {
+  var currentScore= 0;
+
+  targetScore= Math.floor(Math.random()*(120 - 19 + 1))+ 19;
+
+}
+
+// Clicks for crystal
+$("#blue").click(function(){
+  alert("test");
+});
+
+$("#red").click(function(){
+  alert("test");
+});
+
+$("#green").click(function(){
+  alert("test");
+});
+
+$("#yellow").click(function(){
+  alert("test");
+});
+
