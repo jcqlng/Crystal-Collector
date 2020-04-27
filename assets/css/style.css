@@ -1,12 +1,5 @@
-img {
-    width: 50%;
-    height: auto;
-  }
+
 
 body {
       background-image: url('../images/background.jpg');
-  }
-
-.container {
-    min-height: 56px;
   }
