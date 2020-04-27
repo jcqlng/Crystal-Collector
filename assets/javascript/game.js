@@ -1,5 +1,5 @@
 // Crystal variables
-var Crystal = {
+var crystal = {
   blue:
   {
     name: "blue",
@@ -95,17 +95,17 @@ var checkWin = function() {
 
 // Main process
   $("#blue").click(function(){
-    addValues("crystal.blue");
+    addValues(crystal.blue);
   });
   
   $("#red").click(function(){
-    addValues("crystal.red");
+    addValues(crystal.red);
   });
   
   $("#green").click(function(){
-    addValues("crystal.green");
+    addValues(crystal.green);
   });
   
   $("#yellow").click(function(){
-    addValues("crystal.yellow");
+    addValues(crystal.yellow);
   });
