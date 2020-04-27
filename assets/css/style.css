@@ -1,5 +1,11 @@
-
-
 body {
       background-image: url('../images/background.jpg');
   }
+  
+  img {
+    border: 1px solid #ddd; 
+    border-radius: 4px;  
+    padding: 2px; 
+    width: 80px; 
+  }
+
