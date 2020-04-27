@@ -37,6 +37,7 @@ var lossCount = 0;
 var getRandom = function(min,max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
+
 // Begins the game 
 var startGame= function() {
   
@@ -108,7 +109,3 @@ var checkWin = function() {
   $("#yellow").click(function(){
     addValues("crystal.yellow");
   });
-
-
-
-
