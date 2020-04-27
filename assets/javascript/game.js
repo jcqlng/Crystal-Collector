@@ -39,20 +39,22 @@ var lossCount = 0;
 var getRandom = function(min,max) {
   return Math.floor(Math.random()* (max - min + 1)) + min;
 };
-
+// Begins the game 
 var startGame= function() {
   
   var currentScore= 0;
 
   targetScore= getRandom(19,120);
-
+  // Values per crystals 1-12 
   crystal.blue.value = getRandom(1,12);
   crystal.red.value = getRandom(1,12);
   crystal.green.value = getRandom(1,12);
   crystal.yellow.value = getRandom(1,12);
 
+  //console
   console.log("----------------------------------")
   console.log("Target Score: " +targetScore);
+  console.log("Blue: " + crystal.blue.value + " | Red: " + crystal.red.value + " | Green: " + crystal.green.value + " | Yellow: " + crystal.yellow.value);
   console.log("----------------------------------")
 }
 
