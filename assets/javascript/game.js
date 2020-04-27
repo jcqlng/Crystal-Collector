@@ -11,19 +11,19 @@ var Crystal= {
   green
   {
     name: "Green",
-    value: 0,
+    value: 0
   },
 
   red
   {
     name: "Red",
-    value:0,
+    value:0
   },
 
   yellow
   {
     name: "Yellow",
-    value:0,
+    value:0
   }
 
 };
@@ -36,11 +36,24 @@ var targetScore = 0;
 var winCount =0;
 var lossCount = 0;
 
+var getRandom = function(min,max) {
+  return Math.floor(Math.random()* (max - min + 1)) + min;
+};
+
 var startGame= function() {
+  
   var currentScore= 0;
 
-  targetScore= Math.floor(Math.random()*(120 - 19 + 1))+ 19;
+  targetScore= getRandom(19,120);
 
+  crystal.blue.value = getRandom(1,12);
+  crystal.red.value = getRandom(1,12);
+  crystal.green.value = getRandom(1,12);
+  crystal.yellow.value = getRandom(1,12);
+
+  console.log("----------------------------------")
+  console.log("Target Score: " +targetScore);
+  console.log("----------------------------------")
 }
 
 // Clicks for crystal
