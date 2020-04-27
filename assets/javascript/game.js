@@ -1,29 +1,29 @@
 // Global Variables 
 
 // Crystal variables
-var Crystal= {
-  blue
+var Crystal = {
+  blue:
   {
     name: "Blue",
     value: 0
   },
 
-  green
+  green:
   {
     name: "Green",
     value: 0
   },
 
-  red
+  red:
   {
     name: "Red",
     value:0
   },
 
-  yellow
+  yellow:
   {
     name: "Yellow",
-    value:0
+    value: 0
   }
 
 };
