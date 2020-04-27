@@ -51,7 +51,7 @@
                     <h3 class="panel-title text-center">Target Score</h3>
                 </div>
                     <div class="panel-body">
-                        <h3 class="text-center"><strong>78</strong></h3>
+                        <h3 class="text-center" id="targetScore">0</h3>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                         <h3 class="panel-title text-center">Your Score</h3>
                     </div>
                     <div class="panel-body">
-                        <h3 class="text-center"><strong>24</strong></h3>
+                        <h3 class="text-center" id="currentScore">0</h3>
                     </div>
                 </div>
             </div>
@@ -74,10 +74,10 @@
                     <h3 class="panel-title text-center">Select Crystals</h3>   
             </div>
             <div class="panel-body text-center">
-                <img src="assets/images/blue.jpg" alt="">
-                <img src="assets/images/green.jpg" alt="">
-                <img src="assets/images/red.jpg" alt="">
-                <img src="assets/images/yellow.jpg" alt="">
+                <img src="assets/images/blue.jpg" alt="" id="blue">
+                <img src="assets/images/green.jpg" alt="" id="green">
+                <img src="assets/images/red.jpg" alt="" id="red">
+                <img src="assets/images/yellow.jpg" alt="" id="yellow">
             </div>
         </div>
     </div>
@@ -91,7 +91,7 @@
                     <h3 class="panel-title text-center">Win Count</h3>
                     </div>
                     <div class="panel-body">
-                    <h3 class="text-center"><strong>0</strong></h3>
+                    <h3 class="text-center" id="winCount">0</h3>
                 </div>
             </div>
         </div>
@@ -102,15 +102,14 @@
                     <h3 class="panel-title text-center">Loss Count</h3>
                     </div>
                     <div class="panel-body">
-                    <h3 class="text-center"><strong>0</strong></h3>
+                    <h3 class="text-center" id="lossCount">0</h3>
                 </div>
             </div>
         </div>
             
            
         <!--JQuery Link-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!--Scripts-->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>        <!--Scripts-->
         <script src="assets/javascript/game.js"></script>
             
     </body>
