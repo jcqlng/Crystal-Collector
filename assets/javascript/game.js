@@ -59,12 +59,13 @@ function checkPlayerScore() {
 
     console.log(gemValue);
     console.log(counter);
-    var playerInt = parseInt(yourScore.innerHTML);
-    var targetInt = parseInt(targetScore.innerHTML);
-    if (playerInt === targetInt) {
-        alert('You win!');
-    } else if (playerInt > targetInt) {
-        alert('You lose!');
+  var playerInt = parseInt(yourScore.innerHTML);
+  var targetInt = parseInt(targetScore.innerHTML);
+  if (playerInt === targetInt) {
+      alert('You win!');
+  } else if (playerInt > targetInt) {
+    alert('You lose!');
   } 
+}
 
 console.log(getRandomValue(10, 4));
