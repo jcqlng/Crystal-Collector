@@ -33,6 +33,11 @@ The player will have to guess the answer, just like in Word Guess. This time, th
 
 * For the reset css sheet : https://meyerweb.com/eric/tools/css/reset/ 
 
+* Final and Complete adjustments were followed by: https://www.youtube.com/watch?v=ki36iUBbCDY&feature=youtu.be
+
+*For jumbotron css style : https://www.jquery-az.com/7-templates-bootstrap-jumbotron-component/ 
+
+
 
 # Images 
   * Red crystal: https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.crystalcompany.com%2Fdiamond-red.html&psig=AOvVaw3NoQ4SHSZOQ7pXizcTG7gC&ust=1587939527084000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKCnre3NhOkCFQAAAAAdAAAAABAE
@@ -42,5 +47,6 @@ The player will have to guess the answer, just like in Word Guess. This time, th
   * Yellow Crystal: https://www.google.com/url?sa=i&url=https%3A%2F%2Fgeology.com%2Fdiamond%2Fyellow-diamonds%2F&psig=AOvVaw1wqBnqP7IDdtE7mVnM1cQy&ust=1587941228626000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjhwJjUhOkCFQAAAAAdAAAAABAH
 
   * Background Image: https://pixabay.com/illustrations/quatrefoil-pattern-teal-green-898081/
+
 
 
