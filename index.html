@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device, initial-scale=1.0">
         <title>Crystal Collector</title>
 
         <!--Bootstrap Link-->
@@ -13,42 +12,67 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     </head>
 <body>
-
         <!--Header -->
-        <div class="card" style="width: 18rem;">
-            <div class="card-body text-center" >
-                    <h1>Crystal Collector Game!</h1>
+        <div class="container">
+
+            <div class="jumbotron" style="background-color: white;color: aqua;">
+                <div class="container">
+                    <h1 class="text-center">Crystal Collector Game!</h1>
                 </div>
-            </div>
+            </div>        
 
         <!--The instructions-->
-        <div class="card" style="width: 35rem;">
-            <div class="card-body">
-                <div class="col-sm-6" id="yellow">
-                    <p>You will be given a random number at the start of the game.</p>
-                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-                    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-                    <p>The value of each crystal is hidden from you until you click on it.</p>
-                    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h2 class="panel-title text-center">&#9734;Instructions&#9734;</h2>
+                    </div>
+                    <div class="panel-body">
+                        <p><small>You will be given a random number at the start of the game.
+                        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                        You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                        The value of each crystal is hidden from you until you click on it.
+                        Each time when the game starts, the game will change the values of each crystal.</small></p>
+                    </div>
                 </div>
             </div>
         </div>
             
-            <!--Display of  number, wins and losses-->
-            <div class="row">
-                <div class="col-sm-3" id="lightGreen">
-                    <h1 id="random_number"></h1>
-                </div>
-                <div class="col-sm-1" id="blue">
-                    <p>Wins</p>
-                    <p id="number_wins"></p>
-                    <p>Losses</p>
-                    <p id="number_losses"></p>
-                </div>
-            </div>
+            <!--Display of  Target Score & Your Score-->
+        <div class="row">
 
-            <!--Images of crystals-->    
-            <div class="row">
+            <div class="col-lg-3">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Target Score</h3>
+                    </div>
+                    <div class="panel-body">
+                            <h3 class="text-center"><strong>78</strong></h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">Your Score</h3>
+                            </div>
+                            <div class="panel-body">
+                            <h3 class="text-center"><strong>24</strong></h3>
+                        </div>
+                    </div>
+                </div>
+
+            <!--Images of crystals--> 
+            <div class="col-lg-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Select Crystals</h3>   
+                    </div>
+
                 <div class="col-sm-1" id="crystal-1">
                     <img class="img img-thumbnail" src="assets/images/red-crystal.jpg">
                 </div>
@@ -62,15 +86,35 @@
                     <img class="img img-thumbnail" src="assets/images/green-crystal.jpg">
                 </div>
             </div>
-            
-            <!-- Score box display-->
-            <div class="col-sm-3" id="darkGreen1">
-                <p>Your total score is: </p>
-            </div>
+        </div>
+    </div>
 
-            <div class="col-sm-3" id="darkGreen2">
-                <h1 id="total_score"></h1>
+    <!--Score boxes-->
+    <div class="row">
+
+        <div class="col-lg-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Win Count</h3>
+                    </div>
+                    <div class="panel-body">
+                    <h3 class="text-center"><strong>0</strong></h3>
+                </div>
             </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Loss Count</h3>
+                    </div>
+                    <div class="panel-body">
+                    <h3 class="text-center"><strong>0</strong></h3>
+                </div>
+            </div>
+        </div>
+            
+           
         
             
             <!--JQuery Link-->
