@@ -1,7 +1,9 @@
 # unit-4-game
+Crystal Collector game using HTML/CSS/BootStrap/JavaScript.
 
 # Description 
-In this assignment I have created a game called "crystal collector". In the game are the following instructions given by the code boot-camp -
+Link to site: https://jcqlng.github.io/unit-4-game/
+In this assignment I have re-created a game called "crystal collector". In the game are the following instructions given by the code boot-camp -
 The player will have to guess the answer, just like in Word Guess. This time, though, the player will guess with numbers instead of letters.
 
 # App functions:
