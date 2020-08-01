@@ -20,12 +20,22 @@ In this application I recreated a game called Crystal Collector. In this game, t
      * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
 
    * The app shows the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+
+![Webpage](assets/images/crystal-collector.gif)
    
 # 🕷️ Bug Fixes 🕷️
 
-* In the first deployment there was an issue where the first click automatically is a win. 
+* July 31, 2020 -- In the first deployment there was a glitch where the target number remained at 0 and in 1 click you won the game.  Overall, in the main process section of the code at the end of the game.js file, what was forgotten at the top was simply the following:
+```
+startGame();
+```` 
+* July 31, 2020 -- There was also an issue with the "winning" logic for the app. As you can see below, you will get a message saying you won when in fact you did not. 
+![Error](assets/images/nonmatch.png)
 
-🔗 Links and Resources 🔗
+Now the game is fully functional and makes sense!!
+
+
+# 🔗 Links and Resources 🔗
 * For some [Javascript](https://codepen.io/karadi/pen/dvoPaP) example 
 
 * [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
@@ -42,7 +52,7 @@ In this application I recreated a game called Crystal Collector. In this game, t
 
   * [Green Crystal](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nwgems.com%2Fproducts%2Fnatural-extra-fine-rich-green-diamond-round-vs2-si1-africa-extra-fine-grade&psig=AOvVaw2pMzbyd1iAbbOOceSKEb0z&ust=1588097594313000&source=images&cd=vfe&ved=2ahUKEwjI3ovZmonpAhVGOK0KHeH7D8cQr4kDegUIARCMAw)
 
-  * [Background Image](ttps://pixabay.com/illustrations/quatrefoil-pattern-teal-green-898081/)
+  * [Background Image](https://pixabay.com/illustrations/quatrefoil-pattern-teal-green-898081/)
 
 
 
